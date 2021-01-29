@@ -1,0 +1,27 @@
+body {
+    background: url('mebrighton.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+}
+
+.links {
+    color: #ccc;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    right: 5vw;
+    text-align: right;
+    font-size: 24px;
+    font-size: 3vmax;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+.links a {
+    color: #ddd;
+}
+.links a:hover {
+    color: #fff;
+}
