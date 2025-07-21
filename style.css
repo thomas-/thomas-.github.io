@@ -127,3 +127,24 @@ footer {
     rotate: -19deg;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background-color: #222;
+  }
+  nav a {
+    color: #ddd;
+    border: 2px solid #ddd;
+    fill: #ddd;
+    svg {
+      stroke: #ddd !important;
+    }
+  }
+  nav a:hover {
+    color: #000;
+  }
+  footer {
+    color: #aaa;
+  }
+}
