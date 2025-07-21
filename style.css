@@ -117,6 +117,8 @@ footer {
 
 @media (min-width: 844px) {
   header h1 {
+    margin-top: -42px;
+    
     /* cloud */
     color: #7998d7;
     background: linear-gradient(19deg, rgb(113 150 214) 0%, rgb(166 189 229) 100%);
