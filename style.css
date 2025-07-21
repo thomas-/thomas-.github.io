@@ -1,27 +1,129 @@
+html {
+  height: 100%;
+}
+
 body {
-    background: url('mebrighton.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  min-height: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.links {
-    color: #ccc;
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    right: 5vw;
-    text-align: right;
-    font-size: 24px;
-    font-size: 3vmax;
-    font-family: Montserrat, Arial, sans-serif;
+header {
+  h1 {
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #7998d7;
+  }
+  p {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  margin-bottom: 24px;
 }
 
-.links a {
-    color: #ddd;
+main {
+  width: 60%;
+  margin: 10px auto;
 }
-.links a:hover {
-    color: #fff;
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+  justify-content: center;
+  margin: 20px auto;
+
+  a {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 18px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #000;
+
+    svg {
+      height: 100%;
+      width: 24px;
+    }
+  }
+
+  a:hover {
+    background-color: #d18eda;
+  }
+
+  a.overleaf:hover {
+    background-color: #0f271a;
+    fill: #13c965;
+    color: #13c965;
+  }
+
+  a.github:hover {
+    background-color: #ccc;
+    filter: invert(90%) sepia(51%) saturate(278%) hue-rotate(-144deg) brightness(90%) contrast(97%)
+  }
+
+  a.contact:hover {
+    background-color: #ccc;
+    filter: invert(20%) sepia(31%) saturate(400%) hue-rotate(-90deg) brightness(90%) contrast(97%)
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #666;
+  a {
+    color: #666;
+  }
+  .emoji {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    a {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 844px) {
+  header h1 {
+    /* cloud */
+    color: #7998d7;
+    background: linear-gradient(19deg, rgb(113 150 214) 0%, rgb(166 189 229) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 200px;
+    rotate: -19deg;
+  }
 }
